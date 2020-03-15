@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_gravity="center"
+    android:background="@drawable/log_shadow"
+    android:orientation="vertical"
+    android:id="@+id/record">
+
+    <TextView
+        android:id="@+id/dateValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Date"
+        android:fontFamily="@font/arvo_italic"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pulseValue"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:fontFamily="@font/arvo_regular"
+                android:text="Pulse:"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/temperatureValue"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:fontFamily="@font/arvo_regular"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:text="Temperature"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stepsValue"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:fontFamily="@font/arvo_regular"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:text="Steps:"/>
+
+        </TableRow>
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/caloriesBurntValue"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="18sp"-->
+                <!--android:fontFamily="@font/arvo_regular"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="Calories Burnt:"/>-->
+
+        <!--</TableRow>-->
+
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/ecgValue"
+        android:src="@mipmap/ic_launcher_round"/>
+
+</LinearLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sen_bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#00a7fa"
+            android:padding="5dp"
+            android:text="Fill in the following details and register."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sen_regular"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:text="Email: "
+            android:textColor="@android:color/white"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:id="@+id/userEmail"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#858585">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Full Name (in BLOCK Letters)"
+                android:fontFamily="@font/sen_regular"
+                android:textSize="20sp"
+                android:inputType="textCapWords"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:id="@+id/userName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#858585">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Contact Number (10-digits)"
+                android:fontFamily="@font/sen_regular"
+                android:textSize="20sp"
+                android:inputType="phone"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:maxLength="10"
+                android:id="@+id/userPhone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#858585">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Full Postal Address (with Pin Code)"
+                android:fontFamily="@font/sen_regular"
+                android:textSize="20sp"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:id="@+id/userAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#858585">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Date Of Birth (Tap to select)"
+                android:fontFamily="@font/sen_regular"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:focusable="false"
+                android:id="@+id/userDateOfBirth"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sen_regular"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:text="Gender: "/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/userGender">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MALE"
+                android:fontFamily="@font/sen_regular"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                app:buttonTint="@android:color/white"
+                android:id="@+id/maleSelect"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEMALE"
+                android:fontFamily="@font/sen_regular"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                app:buttonTint="@android:color/white"
+                android:layout_marginStart="10dp"
+                android:id="@+id/femaleSelect"/>
+
+        </RadioGroup>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#858585">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Height (in CM)"
+                android:fontFamily="@font/sen_regular"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:id="@+id/userHeight"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#858585">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Weight (in KG)"
+                android:fontFamily="@font/sen_regular"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:id="@+id/userWeight"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sen_regular"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:text="Blood Group (Select): "/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/userBloodGroup"
+            android:fontFamily="@font/sen_regular"
+            android:backgroundTint="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#858585">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Any Disorder (optional)"
+                android:fontFamily="@font/sen_regular"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:textSize="20sp"
+                android:inputType="textMultiLine"
+                android:id="@+id/userDisorder"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="REGISTER"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"
+            android:id="@+id/register"/>
+
+    </LinearLayout>
+
+</ScrollView>

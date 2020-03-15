@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notifications">
+
+        <SwitchPreference android:title="Real time Notifications"
+            android:summary="Receive Alerts even if App is closed \u00B0"
+            android:key="@string/switch_notifications"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Sign in Information">
+
+        <Preference android:title="Email"
+            android:summary="Tap to Sign Out"
+            android:key="@string/signOut"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Health Buddy</string>
+    <string name="web_client_id">831664280415-om1p9315ri6e420d80an1ebel3g9p20g.apps.googleusercontent.com</string>
+    <string name="channel_name">HEALTH_INFO</string>
+    <string name="channel_desc">info_about_health</string>
+    <string name="channel_id">HEALTH_BUDDY</string>
+    <string name="switch_notifications">notifications</string>
+    <string name="signOut">signOut</string>
+    <string name="welcome_text">Welcome to\nHealth Buddy!\n\nSign In to stay fit always</string>
+
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
